@@ -1,0 +1,54 @@
+.menu {
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: relative;
+
+    &__list {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 500;
+        color: #F2E1C2;
+        list-style-type: none;
+
+        & ul {
+            display: flex;
+            gap: 30px;
+            list-style-type: none;
+        }
+
+        & li {
+            cursor: pointer;
+            transition: all 0.5s ease-out;
+        }
+
+        & li:hover {
+            color: #F23207;
+        }
+    }
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.tickets {
+    margin-left: 40px;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #F2E1C2;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    font-weight: 600;
+    &:hover {
+        color: #F2E1C2;
+        background-color: #F23207;
+    }
+}

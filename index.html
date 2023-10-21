@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Getting Started</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="dym">
+            <img src="./src/images/image5.png" />
+            <img src="./src/images/image4.png" />
+        </div>
+        <div class="cover">
+            <div class="cover-bg"></div>
+            <div class="menu">
+                <object class="logo" data="./src/icons/Mars.svg" type="image/svg+xml"></object>
+                <div class="menu__list">
+                    <ul>
+                        <li>О марсе</li>
+                        <li>Процесс</li>
+                        <li>Билеты</li>
+                        <li>Новости</li>
+                        <li>Контакты</li>
+                    </ul>
+                </div>
+                <button class="tickets">Купить билеты</button>
+            </div>
+            <div class="content">
+
+                <i class="icon-line"></i>
+                <p class="content__header">Точка назначения</p>
+                <div class="content__main" type="video/m4v">
+                    <video class="clipped-video" autoplay muted loop>
+                        <source src="./src/video/Mars.m4v">
+                    </video>
+                    <svg class="mars">
+                        <path id="path" d="M0,545 1194,545" />
+                        <clipPath id="text-overlay">
+                            <text dx="-20px">
+                                <textPath id="title" href="#path" font-size="715.255px">
+                                    Mapc
+                                </textPath>
+                            </text>
+                        </clipPath>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
