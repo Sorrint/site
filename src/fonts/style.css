@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'site';
-  src:  url('IconFont/site.eot?wzmixr');
-  src:  url('IconFont/site.eot?wzmixr#iefix') format('embedded-opentype'),
-    url('IconFont/site.ttf?wzmixr') format('truetype'),
-    url('IconFont/site.woff?wzmixr') format('woff'),
-    url('IconFont/site.svg?wzmixr#site') format('svg');
+  src:  url('IconFont/site.eot?xop55');
+  src:  url('IconFont/site.eot?xop55#iefix') format('embedded-opentype'),
+    url('IconFont/site.ttf?xop55') format('truetype'),
+    url('IconFont/site.woff?xop55') format('woff'),
+    url('IconFont/site.svg?xop55#site') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-line:before {
+.icon-close:before {
   content: "\e900";
+}
+.icon-line:before {
+  content: "\e901";
 }

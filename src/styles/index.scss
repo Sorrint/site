@@ -6,6 +6,12 @@
 @font-face {
     font-family: 'Bebas';
     src: url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fonts/Bebas_Neue/BebasNeue Bold.ttf') format('truetype');
+    font-weight: 700;
 }
 
 @import url('../fonts/style.css');
@@ -13,6 +19,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {

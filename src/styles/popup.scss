@@ -1,0 +1,104 @@
+.popup {
+    position: absolute;
+    z-index: 100;
+    background-color: #F2E1C2;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding-top: 100px;
+    // display: none;
+
+    &__title {
+        font-size: 114px;
+        font-family: 'Bebas', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2.85;
+        font-style: normal;
+        white-space: pre-line;
+        margin-bottom: 80px;
+    }
+
+    &__input {
+        background-color: transparent;
+        width: 100%;
+        color: inherit;
+        font-size: 16px;
+        line-height: 1;
+        align-items: center;
+        border: none;
+        border-bottom: 2px solid #000;
+        padding-bottom: 8px;
+    }
+
+    &__input-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+                'input' 'input' 'input'
+                                ;
+        position: relative;
+        padding: 5px 10px 5px 10px;
+        background-color: transparent;
+        column-gap: 20px;
+        row-gap: 60px;
+        font-size: 16px;
+    }
+
+    &__button {
+        margin-left: 0;
+        width: 100%;
+        grid-column: 3;
+        grid-row: 2;
+    }
+}
+
+.popup__arrival,
+.popup__departure,
+.popup__guests {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: bold;
+}
+input[type="date"] {
+    position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+  }
+
+.icon-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    padding: 10px;
+    background-color: #262526;
+    color: #F2E1C2;
+    &:hover {
+        cursor: pointer;
+        background-color: #F23207;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}

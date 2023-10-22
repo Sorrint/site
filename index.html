@@ -25,10 +25,9 @@
                         <li>Контакты</li>
                     </ul>
                 </div>
-                <button class="tickets">Купить билеты</button>
+                <button class="tickets menu__button">Купить билеты</button>
             </div>
             <div class="content">
-
                 <i class="icon-line"></i>
                 <p class="content__header">Точка назначения</p>
                 <div class="content__main" type="video/m4v">
@@ -47,7 +46,37 @@
                     </svg>
                 </div>
             </div>
+            <div class="popup">
+                <div class="content">
+                    <i class="icon-close"></i>
+                    <p class="popup__title">Бронирование
+                        билетов</p>
+                    <div class="popup__input-group">
+                        <div class=" popup__arrival">
+                            <label className="placeholder" htmlFor='arrivalD'>
+                                Дата заезда
+                            </label>
+                            <input id='arrival' class='popup__input' type="date" name='arrivalD' />
+                        </div>
+                        <div class="popup__departure">
+                            <label className="placeholder" htmlFor='departure'>
+                                Дата выезда
+                            </label>
+                            <input id='departure' class='popup__input' type="date" name='departure' />
+
+                        </div>
+                        <div class="popup__guests">
+                            <label className="placeholder" htmlFor='guests'>
+                                Количество
+                            </label>
+                            <input id='guests' class='popup__input' type="text" name='guests' />
+                        </div>
+                        <button class="tickets popup__button">Купить билеты</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
 </body>
 
